@@ -7,6 +7,7 @@
   --footer-backgroung-color: #2f303a;
   --address-link: rgba(255, 255, 255, 0.6);
   --studio-background-color: #f5f4fa;
+  --title-backroung-color: #2f303a;
 }
 body {
   background-color: var(--primary-white-color);
@@ -14,8 +15,11 @@ body {
   font-family: roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Logo */
@@ -29,6 +33,18 @@ body {
 }
 .accent {
   color: var(--accent-color);
+}
+/* Page-header */
+.page-header {
+  background-color: var(--primary-white-color);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 /* Site nav */
 .site-nav .link {
@@ -60,31 +76,48 @@ body {
 }
 /* Studio */
 .title {
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--title-backroung-color);
 }
 .title-header {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+}
+.container-background {
+  background-color: var(--title-backroung-color);
+}
+.container-title {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+  text-align: center;
 }
 .button-title {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 216px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
 .button-title:hover,
 .button-title:focus {
-  background-color: var(--primary-white-color);
+  background-color: var(--studio-background-color);
   color: var(--primary-text-color);
 }
 /* Features */
@@ -93,10 +126,22 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  /* margin-top: 94px; */
 }
 .features-paragraph {
   color: var(--paragraph-text-color);
   line-height: 1.71;
+  margin-top: 10px;
+  /* margin-bottom: 118px; */
+}
+.container-features {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 /* Works */
 .works-title {
@@ -104,6 +149,14 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.container-works {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 /* Team */
 .team {
@@ -119,9 +172,20 @@ body {
   font-size: 16px;
   line-height: 1.18;
 }
+.contairen-team {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 /* Portfolio */
 .primary-title {
   visibility: hidden;
+  margin: 0;
+  font-size: 0;
+  margin-block: 0;
 }
 .portfolio-title {
   color: var(--primary-text-color);
@@ -138,7 +202,11 @@ body {
 /* Button */
 .button {
   color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--studio-background-color);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 25px;
+  min-width: 73px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -150,6 +218,9 @@ body {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* Footer */
 .footer {

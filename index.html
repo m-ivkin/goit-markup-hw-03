@@ -11,55 +11,64 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="page">
     <!--Шапка сайту-->
     <header class="page-header">
-      <nav>
-        <a href="./index.html" class="header-logo"
-          ><span class="accent">Web</span>Studio</a
-        >
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="header-logo"
+            ><span class="accent">Web</span>Studio</a
+          >
 
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacts-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contacts-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-
-      <ul class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!--Основний контент-->
     <main>
       <!--Головний герой-->
-      <div>
-        <section class="title">
-          <h1 class="title-header">Ефективні рішення для вашого бізнесу</h1>
-          <ul class="buttons list">
-            <li>
-              <button type="button" class="button-title">
-                Замовити послугу
-              </button>
-            </li>
-          </ul>
-        </section>
+      <div class="container-background">
+        <div class="container-title">
+          <section class="title">
+            <h1 class="title-header">Ефективні рішення для вашого бізнесу</h1>
+            <ul class="buttons list">
+              <li>
+                <button type="button" class="button-title">
+                  Замовити послугу
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
 
       <!--Ocoбливості-->
-      <section class="blablalba">
+      <section>
+        <div class="container">
         <h2 class="primary-title">Ocoбливості</h2>
         <ul class="features list">
           <li>
@@ -91,7 +100,7 @@
           </li>
         </ul>
       </section>
-
+      </div>
       <!--Чим ми займаємося-->
       <section>
         <h2 class="works-title">Чим ми займаємося</h2>
@@ -119,7 +128,6 @@
           </li>
         </ul>
       </section>
-
       <section class="team">
         <h2 class="works-title">Наша команда</h2>
         <ul class="team-index list">
