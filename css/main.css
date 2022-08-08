@@ -86,12 +86,22 @@ address {
   outline: 2px solid tomato;
 }
 /* Site nav */
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
-  text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -101,6 +111,12 @@ address {
   color: var(--accent-color);
 }
 /* Header contacts */
+.contacts {
+  display: flex;
+}
+.contacts .item + .item {
+  margin-left: 30px;
+}
 .contacts .contacts-link {
   color: var(--paragraph-text-color);
   text-decoration: none;
@@ -235,6 +251,7 @@ address {
   padding-top: 50px;
 } */
 /* Portfolio */
+
 .primary-title {
   visibility: hidden;
   margin: 0;
@@ -247,17 +264,23 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 20px 24px 4px 24px;
 }
 .portfolio-paragraph {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.87;
+  padding: 0px 24px 20px 24px;
 }
 /* Button */
+.buttons {
+  display: inline-block;
+  padding-bottom: 50px;
+  padding-right: 8px;
+}
 .button {
   color: var(--primary-text-color);
   background-color: var(--studio-background-color);
-  display: inline-block;
   border-radius: 4px;
   padding: 6px 25px;
   min-width: 73px;
@@ -267,6 +290,7 @@ address {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
+  align-items: center;
 }
 .button:hover,
 .button:focus {
@@ -289,6 +313,7 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  padding-bottom: 20px;
 }
 .address-hyperlink {
   color: var(--primary-white-color);
@@ -296,6 +321,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+  padding-bottom: 9px;
 }
 .address-hyperlink:hover,
 .address-hyperlink:focus {
@@ -306,6 +332,7 @@ address {
   text-decoration: none;
   line-height: 1.7;
   font-style: normal;
+  padding-bottom: 9px;
 }
 .address-link:hover,
 .address-link:focus {
