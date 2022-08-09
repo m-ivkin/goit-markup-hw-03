@@ -53,6 +53,7 @@ address {
   font-style: normal;
 }
 
+/* List */
 .list {
   padding: 0;
   margin: 0;
@@ -63,6 +64,10 @@ address {
 }
 /* Logo */
 .header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+
   color: var(--logo-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -84,6 +89,13 @@ address {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+}
+.display-header {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
 }
 /* Site nav */
 .site-nav {
@@ -111,13 +123,14 @@ address {
   color: var(--accent-color);
 }
 /* Header contacts */
-.contacts {
+.contacts-nav {
   display: flex;
+  margin-left: auto;
 }
-.contacts .item + .item {
+.contacts-nav .item + .item {
   margin-left: 30px;
 }
-.contacts .contacts-link {
+.contacts-nav .contacts-link {
   color: var(--paragraph-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -125,8 +138,8 @@ address {
   letter-spacing: 0.02em;
   font-style: normal;
 }
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+.contacts-nav .contacts-link:hover,
+.contacts-nav .contacts-link:focus {
   color: var(--accent-color);
 }
 /* Section */
@@ -141,11 +154,18 @@ address {
 /* Studio */
 .title {
   background-color: var(--title-backroung-color);
+  display: flex;
+  display: inline-block;
+  justify-content: center;
 }
 .title-header {
+  box-sizing:border-box;
+  width: 696px;
+  height: 120px;
   margin-top: 0;
   margin-bottom: 30px;
-  color: var(--primary-white-color);
+
+color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -185,6 +205,18 @@ address {
   color: var(--primary-text-color);
 }
 /* Features */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-list .item {
+  width: 270px;
+  justify-content: 
+  background-color: tomato;
+}
+.features-list .item + .item {
+margin-left: 30px;
+}
 .features-title {
   font-weight: 700;
   line-height: 1.14;
@@ -274,11 +306,17 @@ address {
 }
 /* Button */
 .buttons {
-  display: inline-block;
-  padding-bottom: 50px;
-  padding-right: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.button {
+.buttons .buttons-list + .buttons-list {
+  margin-left: 8px;
+}
+.buttons-list {
+  display: inline-block;
+}
+.button-item {
   color: var(--primary-text-color);
   background-color: var(--studio-background-color);
   border-radius: 4px;
@@ -292,8 +330,8 @@ address {
   cursor: pointer;
   align-items: center;
 }
-.button:hover,
-.button:focus {
+.button-item:hover,
+.button-item:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
